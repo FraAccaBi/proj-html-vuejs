@@ -10,9 +10,11 @@
         </ul>
       </div>
     </div>
+    
     <div class="main">
 
     </div>
+    <div class="wave"></div>
   </div>
   
 </template>
@@ -81,19 +83,34 @@ export default {
 @import "~@/assets/scss/variables.scss";
 .slider{
   background-image: url("../../public/img/theme_slider2_bg-1.jpg");
-  background-position: center;
-  height: 500px;
+  background-size: 102%;
+    background-position: 55% 104%;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    height: 700px;
 
   .header{
   background-color: $bg-pink-transparent;
-  height: calc(500px / 5);
+  
+  height: calc(600px / 6);
     .logo>img{
     max-height: 100px;
     }
   };
   .main{
-    height: calc((500px / 5) * 4);
+    height: calc((600px / 6) * 5);
     background-color: $bg-pink-transparent;
+  }
+  .wave{
+    background-image: url("../../public/img/screencapture.png") ;
+    background-repeat: no-repeat;
+    height: 100px;
+    
+    background-position: 10% 20%;
+    background-size: cover;
+    
+    
+    
   }
 }
 
