@@ -1,0 +1,11 @@
+@import "~@/assets/scss/variables.scss";
+button{
+    border-radius: 2rem;
+    border: 1px solid transparent;
+}
+.btn-white{
+    background-color: $bg-light;
+}
+.btn-yellow{
+    background-color: $btn-yellow;
+}

@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="d-flex flex-column justify-content-center">
     <SiteHeader />
     <SiteMain />
     <SiteFooter />
@@ -25,4 +25,5 @@ export default {
 <style lang="scss">
 @import "~@/assets/scss/style.scss";
 @import "~@/assets/scss/variables.scss";
+
 </style>

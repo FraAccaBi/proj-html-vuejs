@@ -11,8 +11,19 @@
       </div>
     </div>
     
-    <div class="main">
-
+    <div class="main d-flex flex-column align-items-center">
+      <div class="text-container">
+          <h1>Key to your success</h1>
+        <p>Eduprime is the most versatile WordPress theme for educational purposes, shocasing universities, courses, secondary schools etc.</p>
+        <div class="buttons d-flex">
+          <button class="btn-yellow text-light">
+            <span>Search icon</span> Search courses
+          </button>
+          <button class="btn-white text-pink">
+            <span>Add a friend icon</span> Apply for university
+          </button>
+        </div>
+      </div>
     </div>
     <div class="wave"></div>
   </div>
@@ -81,13 +92,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "~@/assets/scss/variables.scss";
+@import "~@/assets/scss/style.scss";
 .slider{
   background-image: url("../../public/img/theme_slider2_bg-1.jpg");
-  background-size: 102%;
-    background-position: 55% 104%;
+  background-size: 100%;
+    background-position: top;
     background-repeat: no-repeat;
     max-width: 1440px;
-    height: 700px;
+    height: 510px;
 
   .header{
   background-color: $bg-pink-transparent;
@@ -98,15 +110,18 @@ export default {
     }
   };
   .main{
-    height: calc((600px / 6) * 5);
+    height: calc((492.5px / 6) * 5);
     background-color: $bg-pink-transparent;
+    .text-container{
+      width:415px ;
+    }
   }
   .wave{
     background-image: url("../../public/img/screencapture.png") ;
     background-repeat: no-repeat;
-    height: 100px;
+    height: 130px;
     
-    background-position: 10% 20%;
+    background-position: 10% 0%;
     background-size: cover;
     
     
