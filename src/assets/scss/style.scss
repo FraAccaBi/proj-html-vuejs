@@ -1,4 +1,8 @@
 @import "~@/assets/scss/variables.scss";
+h1,h2,h3,h4,h5, button { font-family: "Fredoka One", cursive; }
+p{
+    font-family: "Source Sans Pro", sans-serif; 
+}
 button{
     border-radius: 2rem;
     border: 1px solid transparent;
