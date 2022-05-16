@@ -121,17 +121,54 @@
         </div>
         
     </section>
-    <section class="upcoming">
-      <h2>
+    <section class="upcoming d-flex flex-column align-items-center">
+      <h2 class="text-center">
         Upcoming Events
       </h2>
-      <div class="box">Coaching Sessions</div>  
-      <div class="box">Coaching Sessions</div>
-      <div class="box">Coaching Sessions</div>
-      <button class="btn-yellow">
+      <div class="container">
+        <div class="row justify-content-center mx-3">
+          <div class="box col-4 text-center">
+            <h5>
+              Coaching Sessions
+            </h5>
+            <p style="font-size:x-small;">
+              20 May 21:30 PM <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime ipsa! Porro(...)
+            </p>
+            <button class="btn-pink text-light">
+              + Find More
+            </button>
+          </div>
+          <div class="box col-4 text-center">
+            <h5>
+              Coaching Sessions
+            </h5>
+            <p style="font-size:x-small;">
+              20 May 21:30 PM <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime ipsa! Porro(...)
+            </p>
+            <button class="btn-pink text-light">
+              + Find More
+            </button>
+          </div>
+          <div class="box col-4 text-center">
+            <h5>
+              Coaching Sessions
+            </h5>
+            <p style="font-size:x-small;">
+              20 May 21:30 PM <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime ipsa! Porro(...)
+            </p>
+            <button class="btn-pink text-light">
+              + Find More
+            </button>
+          </div>
+        </div>
+      </div>  
+      <button class="btn-yellow my-5 text-light">
         View All Events
       </button>
     </section>
+    <div class="wave-2">
+      
+    </div>
     <section class="latest">
       <h2>
         Latest Courses
@@ -261,5 +298,33 @@ export default {
     padding-left: 8rem;
     column-gap: 4rem;
   }
+}
+.upcoming{
+  background-color: $bg-pink;
+  height: 350px;
+  h2{
+    color: $text-light;
+    
+    };
+  .box{
+    background-color: $bg-light ;
+    height: 120px;
+    width: 250px;
+    margin: 1rem;
+    border-radius:1rem;
+    padding-top: 0.6rem;
+    p{
+      color: $text-grey-2;
+    }
+  }
+}
+.btn-yellow{
+  align-self: center;
+}
+.wave-2{
+  background: url("../../public/svg/svg-1.svg");
+  margin-top: -1px;
+  background-position: 5% 0;
+  height: 80px;
 }
 </style>
