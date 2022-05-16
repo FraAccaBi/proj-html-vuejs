@@ -1,6 +1,6 @@
 <template>
-  <div class="slider">
-    <div class="header d-flex">
+  <div class="slider my-container">
+    <div class="header d-flex ">
       <div class="logo">
         <img class="p-4" src="../../public/img/theme_eduprime_logo.png" alt="">
       </div>
@@ -13,7 +13,7 @@
     
     <div class="main d-flex flex-column align-items-center">
       <div class="text-container">
-          <h1>Key to your success</h1>
+        <h1>Key to your success</h1>
         <p>Eduprime is the most versatile WordPress theme for educational purposes, shocasing universities, courses, secondary schools etc.</p>
         <div class="buttons d-flex">
           <button class="btn-yellow text-light">
@@ -98,8 +98,9 @@ export default {
   background-size: 100%;
     background-position: top;
     background-repeat: no-repeat;
-    max-width: 1440px;
-    height: 510px;
+    height: 511px;
+    margin-bottom: 130px;
+    width: 1440px;
 
   .header{
   background-color: $bg-pink-transparent;
