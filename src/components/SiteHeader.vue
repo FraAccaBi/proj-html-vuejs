@@ -118,12 +118,13 @@ export default {
     }
   }
   .wave{
-    background-image: url("../../public/img/screencapture.png") ;
+    background-image: url("../../public/img/Wave-1.png"), url("../../public/svg/svg-0.svg") ;
     background-repeat: no-repeat;
     height: 130px;
-    
-    background-position: 10% 0%;
+    background-blend-mode: multiply;
     background-size: cover;
+    transform: rotate(180deg);
+
     
     
     

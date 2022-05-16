@@ -63,30 +63,63 @@
           </div>
         </div>
       </div>
-      <div class="law-example">
-        <img src="" alt="">
-        <div class="text-center">
-          <h3>
-            Law Faculty
-          </h3>
-          <p>
-            Learning from world-leading academics and practitioners, you’ll not only receive an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions.
-          </p>
-          <button class="btn-pink text-light">
-            Read More
-          </button>
+      <div class="law-example col-2-container">
+        <div class="row py-5">
+          <div class="col-5">
+            <img src="../../public/img/Gavel-Illustration-e1556884768193.png" alt="">
+          </div>
+          <div class="col-7">
+            <h3>
+              Law Faculty
+            </h3>
+            <p>
+              Learning from world-leading academics and practitioners, you’ll not only receive an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions.
+            </p>
+            <button class="btn-pink text-light">
+              Read More
+            </button>
+          </div>
         </div>
+        
       </div>
       <div class="wave"></div>
     </section>
-    <section class="uni-years">
-        <h2>
+    <section class="uni-years py-5 text-center">
+        <h2 >
           University Year
         </h2>
-        <div class="col">Demo classes</div>
-        <div class="col">Graduation Day</div>
-        <div class="col">Orientation</div>
-        <div class="col">Evaluation</div>
+        <div class="container">
+          <div class="row justify-content-end">
+          <div class="col-4">
+            <h5>Demo classes</h5>
+            <p>
+              In the fisrt week, students try to accomodate with the teaching style and choose their optional courses.
+            </p>
+          </div>
+          <div class="col-4">
+            <h5>Graduation Day</h5>
+            <p>
+              On the day of graduation, all students gather for the ceremony and then network and party among others.
+            </p>
+          </div>
+        </div>
+        <img src="../../public/img/Timeline-Item.png" alt="">
+        <div class="row justify-content-start">
+          <div class="col-4">
+            <h5>Orientation</h5>
+            <p>
+              First day of the university year, all students gather for the opening ceremony an then network with others.
+            </p>
+         </div>
+          <div class="col-4">
+            <h5>Evaluation</h5>
+            <p>
+              At the end of a semester, students take a general evaluation test for every subject they're learning.
+            </p>
+          </div>
+        </div>
+        </div>
+        
     </section>
     <section class="upcoming">
       <h2>
@@ -176,27 +209,57 @@ export default {
 @import "~@/assets/scss/style.scss";
 .courses{
   height: 425px;
-  .col-5>img{
-    max-width: 400px;
-  }
 }
 .faculties{
   height: 555px;
+  margin-bottom:148px;
   .box{
     padding-top: 10px;
     height: 130px;
+    color: $text-pink;
+    border: 2px solid $border-grey-1;
   }
   .box>img{
     width: 100px;
   }
   .box-active:hover{
     background-color: $bg-pink-transparent;
+    border:none;
     
     color: $text-light;
     img{
       filter: brightness(3.5);
     }
 
+  }
+}
+.col-5>img{
+    max-width: 300px;
+  }
+.wave{
+    background-image: url("../../public/img/Wave-1.png"), url("../../public/svg/svg-0.svg") ;
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 1440px;
+    background-blend-mode: multiply;
+    background-size: cover;
+  }
+.uni-years{
+  background-color: $bg-pink;
+  height: 650px;
+  color: $text-light;
+  h2{
+    color: $text-light;
+    padding: 2rem;
+  };
+  .justify-content-end{
+    padding-right: 8rem;
+    column-gap: 4rem;
+  };
+  .justify-content-start{
+    padding-top: 1rem;
+    padding-left: 8rem;
+    column-gap: 4rem;
   }
 }
 </style>
