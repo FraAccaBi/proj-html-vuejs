@@ -2,10 +2,32 @@
 button{
     border-radius: 2rem;
     border: 1px solid transparent;
+    padding: 0.5rem;
 }
 .btn-white{
     background-color: $bg-light;
+    &:hover{
+        background-color: $btn-yellow;
+    }
 }
 .btn-yellow{
     background-color: $btn-yellow;
+    &:hover{
+        background-color: $bg-pink;
+    }
+}
+.btn-pink{
+    background-color: $bg-pink;
+    &:hover{
+        background-color: $btn-yellow;
+    }
+}
+.tx-light{
+    color: $text-light;
+}
+.tx-pink{
+    color: $text-pink;
+}
+.tx-yellow{
+    color: $text-yellow;
 }

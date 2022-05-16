@@ -1,5 +1,31 @@
 <template>
   <div>
+    <div class="container">
+      <div class="row row-cols-3">
+        <div class="col">
+
+        </div>
+        <div class="col">
+
+        </div>
+        <div class="col">
+          <div class="search">
+
+          </div>
+          <div class="categories">
+            <h5>
+              Search categories
+            </h5>
+            <div class="btn-border">
+
+            </div>
+            <span>
+              ModelTheme. All rights reserved
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
     
   </div>
 </template>
