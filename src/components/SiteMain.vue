@@ -1,6 +1,6 @@
 <template>
-  <div class="my-container">
-    <section class="courses col-2-container pt-5">
+  <div class="my-container mt-5">
+    <section class="courses col-2-container pt-5 mt-5">
       <div class="row pt-5">
         <div class="col-7 pe-4">
           <img class="icons-img py-1" src="../../public/img/Books-icon.png" alt="">
@@ -135,6 +135,7 @@
               Coaching Sessions
             </h5>
             <p style="font-size:x-small;">
+              <font-awesome-icon icon="fa-solid fa-calendar-days" />
               20 May 21:30 PM <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime ipsa! Porro(...)
             </p>
             <button class="btn-pink text-light">
@@ -146,6 +147,7 @@
               Coaching Sessions
             </h5>
             <p style="font-size:x-small;">
+              <font-awesome-icon icon="fa-solid fa-calendar-days" />
               20 May 21:30 PM <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime ipsa! Porro(...)
             </p>
             <button class="btn-pink text-light">
@@ -157,6 +159,7 @@
               Coaching Sessions
             </h5>
             <p style="font-size:x-small;">
+              <font-awesome-icon icon="fa-solid fa-calendar-days" />
               20 May 21:30 PM <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime ipsa! Porro(...)
             </p>
             <button class="btn-pink text-light">
@@ -373,23 +376,26 @@ export default {
   background-color: $bg-pink;
   height: 700px;
   color: $text-light;
+  p{
+    color: $text-light;
+  }
   h2{
     color: $text-light;
     padding: 2rem;
   };
   .justify-content-end{
-    padding-right: 8rem;
-    column-gap: 4rem;
+    padding-right: 3rem;
+    column-gap: 6rem;
   };
   .justify-content-start{
     padding-top: 1rem;
-    padding-left: 8rem;
-    column-gap: 4rem;
+    padding-left: 3rem;
+    column-gap: 5rem;
   }
 }
 .upcoming{
   background-color: $bg-pink;
-  height: 380px;
+  height: 450px;
   h2{
     color: $text-light;
     
@@ -430,6 +436,9 @@ export default {
   width: 100vw;
   height: 80px;
   color: $text-light;
+  .search{
+    width: 30%;
+  }
 }
 .logos{
   height: 80px;

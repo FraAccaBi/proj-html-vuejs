@@ -54,7 +54,7 @@ export default {
     background-repeat: no-repeat;
     height: 511px;
     margin-bottom: 130px;
-    width: 1440px;
+    width: 100vw;
     position: relative;
 
   .header{

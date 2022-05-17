@@ -3,6 +3,9 @@
     <SiteHeader />
     <SiteMain />
     <SiteFooter />
+    <a class="arrow" href="#">
+      <font-awesome-icon icon="fa-solid fa-chevron-up" />
+    </a>
   </div>
 </template>
 
@@ -22,8 +25,20 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "~@/assets/scss/style.scss";
 @import "~@/assets/scss/variables.scss";
+#app{
+  position:relative;
+  .arrow{
+    background-color: $btn-yellow;
+    padding: 0.9rem;
+    border-radius: 100%;
+    color: $text-light;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+  }
+}
 
 </style>
