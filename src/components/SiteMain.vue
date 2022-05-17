@@ -268,16 +268,33 @@
         </div>
       </div>
     </section>
-    <section class="subscription">
+    <section class="subscription d-flex align-items-center justify-content-evenly">
       <h3>
         Subscribe now to Our Newsletter !
       </h3>
       <input type="text" placeholder="Email address...">
     </section>
-    <section class="partners">
-      <h3>
+    <section class="partners container align-items-center justify-content-center">
+      <div class="text-center pt-5">
+        <h3>
         Partners
-      </h3>
+        </h3>
+        <p>
+          Leverage agile frameworks to provide a robust synopsis for high level 
+          <br>
+          overviews, iterative approaches to corporate strategy.
+        </p>
+      </div>
+      <div class="logos d-flex align-items-center justify-content-center gap-4">
+        <div class="medals align-self-center"></div>
+        <div class="lightbulb"></div>
+        <div class="book"></div>
+        <div class="school"></div>
+        <div class="pen"></div>
+        <div class="cup"></div>
+        <div class="paperplane"></div>
+        <div class="communication"></div>
+      </div>
     </section>
   </div>
 </template>
@@ -383,5 +400,56 @@ export default {
   &>img{
     width: 100px;
   }
+}
+.subscription{
+  background-color: $bg-pink;
+  height: 80px;
+  color: $text-light;
+}
+.logos{
+  height: 80px;
+  .medals, .lightbulb, .book, .school, .pen, .cup, .paperplane, .communication {
+    display: inline-block;
+    width: calc(100% / 8);
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: contrast(0.1);
+    &:hover{
+        filter: none;
+        cursor: pointer;
+      }
+  };
+  .lightbulb, .book, .pen, .cup, .paperplane{
+    width: 30px;
+  }
+  .medals{
+    background-image: url("../../public/img/partner-2.png");
+  };
+  .lightbulb{
+    background-image: url("../../public/img/partner-3.png");
+  };
+  .book{
+    background-image: url("../../public/img/partner-4.png");
+  };
+  
+  .school{
+    background-image: url("../../public/img/partner-5.png");
+  };
+  .pen{
+    background-image: url("../../public/img/partner-6.png");
+  };
+    
+  .cup{
+    background-image: url("../../public/img/partner-8.png");
+  };
+    
+  .paperplane{
+    background-image: url("../../public/img/partner-1.png");
+  };
+  .communication{
+    background-image: url("../../public/img/partner-7.png"); 
+  };
+  
 }
 </style>
