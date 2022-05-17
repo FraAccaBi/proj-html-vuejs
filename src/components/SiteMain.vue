@@ -122,11 +122,12 @@
         
     </section>
     <section class="upcoming d-flex flex-column align-items-center">
+      <img class="h-25" src="../../public/img/upcoming-events-calendar-icon.png" alt="">
       <h2 class="text-center">
         Upcoming Events
       </h2>
       <div class="container">
-        <div class="row justify-content-center mx-3">
+        <div class="row justify-content-evenly mx-3">
           <div class="box col-4 text-center">
             <h5>
               Coaching Sessions
@@ -169,53 +170,103 @@
     <div class="wave-2">
       
     </div>
-    <section class="latest">
+    <section class="latest container py-5">
       <h2>
         Latest Courses
       </h2>
-      <div class="courses">
-        <div class="course-box">
-        <h5>
-          Make Better Decisions
-        </h5>
-
+      <div class="courses text-center row row-cols-4 pt-5">
+        <div class="col course-box">
+          <img src="../../public/img/Decisions-icon.png" alt="">
+          <h5>
+            Make Better Decisions
+          </h5>
+          <p>
+            Teacher: <span>James Colins</span> 
+            <br>
+            Price: <span> $21.00</span>
+          </p>
+          <button class="btn-pink text-light">
+            View Course
+          </button>
         </div>
-        <div class="course-box">
+        <div class="col course-box">
+          <img src="../../public/img/Speaker-icon.png" alt="">
           <h5>
             How to be a speaker
           </h5>
+          <p>
+            Teacher: <span>James Colins</span> 
+            <br>
+            Price: <span> $21.00</span>
+          </p>
+          <button class="btn-pink text-light">
+            View Course
+          </button>
         </div>
-        <div class="course-box">
+        <div class="col course-box">
+          <img src="../../public/img/Network-icon.png" alt="">
           <h5>
             Network Introductions
           </h5>
+          <p>
+            Teacher: <span>James Colins</span> 
+            <br>
+            Price: <span> $21.00</span>
+          </p>
+          <button class="btn-pink text-light">
+            View Course
+          </button>
         </div>
-        <div class="course-box">
+        <div class="col course-box">
+          <img src="../../public/img/Brand-icon.png" alt="">
           <h5>
             Brand Management
           </h5>
+          <p>
+            Teacher: <span>James Colins</span> 
+            <br>
+            Price: <span> $21.00</span>
+          </p>
+          <button class="btn-pink text-light">
+            View Course
+          </button>
         </div>
       </div>
-      <h3>
-        The most efficient examination method
-      </h3>
-      <p>
-        EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of our students. Every teacher from our university has an influence on how students are evaluated at his/her subject.
-      </p>
-      <button class="btn-pink">
-        Discover the Method
-      </button>
+      <div class="row col-2-container">
+        <div class="col-7">
+          <img height="60px" src="../../public/img/Exam-icon.png" alt="">
+          <h3 class="pt-3">
+            The most efficient examination method
+          </h3>
+          <p>
+            EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of our students. Every teacher from our university has an influence on how students are evaluated at his/her subject.
+          </p>
+          <button class="btn-pink text-light">
+            Discover the Method
+          </button>
+        </div>
+        <div class="col-5">
+          <img src="../../public/img/Exam-Illustration.png" alt="">
+        </div>
+      </div>
     </section>
     <section class="fees">
-      <h2>
-        Variable fees for international students
-      </h2>
-      <p>
-        EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of our students. Every teacher from our university has an influence on how students are evaluated at his/her subject.
-      </p>
-      <button class="btn-pink">
-        List of Fees
-      </button>
+      <div class="row col-2-container">
+        <div class="col-5">
+          <img src="../../public/img/Girl-Illustration.png" alt="">
+        </div>
+        <div class="col-7">
+          <h2>
+            Variable fees for international students
+          </h2>
+          <p>
+            EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of our students. Every teacher from our university has an influence on how students are evaluated at his/her subject.
+          </p>
+          <button class="btn-pink text-light">
+            List of Fees
+          </button>
+        </div>
+      </div>
     </section>
     <section class="subscription">
       <h3>
@@ -326,5 +377,11 @@ export default {
   margin-top: -1px;
   background-position: 5% 0;
   height: 80px;
+}
+.course-box{
+  height: 250px;
+  &>img{
+    width: 100px;
+  }
 }
 </style>
