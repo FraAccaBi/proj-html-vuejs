@@ -71,25 +71,6 @@ export default {
   span{
   color: $text-yellow;
   }
-  .search{
-    position: relative;
-    padding-bottom: 1rem ;
-    input{
-    width: 100%;
-    border: 1px solid transparent;
-    border-radius: 1.5rem;
-    padding: 0.8rem;
-    }
-    .lens{
-      color: $text-light;
-      background-color: $btn-yellow;
-      padding: 1.1rem;
-      border-radius: 1.5rem;
-      position: absolute;
-      right: 0;
-      top:0;
-    }
-  }
   
 }
 

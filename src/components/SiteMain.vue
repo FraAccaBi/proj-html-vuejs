@@ -1,8 +1,9 @@
 <template>
   <div class="my-container">
-    <section class="courses col-2-container">
+    <section class="courses col-2-container pt-5">
       <div class="row pt-5">
         <div class="col-7 pe-4">
+          <img class="icons-img py-1" src="../../public/img/Books-icon.png" alt="">
           <h2>
             Thousands of courses for any type of student
             </h2>
@@ -18,74 +19,75 @@
         </div>
       </div>
     </section>
-    <section class="faculties">
+    <section class="faculties pt-5">
       <div class="text-center">
         <h2>
-        Faculties available at EduPrime
-      </h2>
-      <p class="fs-6">
-        A single university with a load of courses, tailored <br>
-        to satisfy any student's needs.
-      </p>
-      </div>
-      <div class="slider container">
-        <div class="row row-cols-5">
-          <div class="col box d-flex flex-column align-items-center box-active">
-            <img src="../../public/img/Gavel-v2.png" alt="">
-            <div class="title">
-              Law faculty
-            </div>
+          Faculties available at EduPrime
+        </h2>
+        <p class="fs-6 py-2">
+          A single university with a load of courses, tailored <br>
+          to satisfy any student's needs.
+        </p>
+        </div>
+        <div class="slider container">
+          <div class="row row-cols-5">
+            <div class="col box d-flex flex-column align-items-center box-active">
+              <img src="../../public/img/Gavel-v2.png" alt="">
+              <div class="title">
+                Law faculty
+              </div>
 
-          </div>
-          <div class="col box d-flex flex-column align-items-center ">
-            <img src="../../public/img/Coins-tabs-v2.png" alt="">
-            <div class="title">
-              Economy
             </div>
-          </div>
-          <div class="col box d-flex flex-column align-items-center">
-            <img src="../../public/img/Medicine-tabs-v2.png" alt="">
-            <div class="title">
-              Medicine
+            <div class="col box d-flex flex-column align-items-center ">
+              <img src="../../public/img/Coins-tabs-v2.png" alt="">
+              <div class="title">
+                Economy
+              </div>
             </div>
-          </div>
-          <div class="col box d-flex flex-column align-items-center">
-            <img src="../../public/img/Computer-tabs-v2.png" alt="">
-            <div class="title">
-              Computer Science
+            <div class="col box d-flex flex-column align-items-center">
+              <img src="../../public/img/Medicine-tabs-v2.png" alt="">
+              <div class="title">
+                Medicine
+              </div>
             </div>
-          </div>
-          <div class="col box d-flex flex-column align-items-center">
-            <img src="../../public/img/Palette-tabs-v2.png" alt="">
-            <div class="title">
-              Graphic Design
-            </div>    
+            <div class="col box d-flex flex-column align-items-center">
+              <img src="../../public/img/Computer-tabs-v2.png" alt="">
+              <div class="title">
+                Computer Science
+              </div>
+            </div>
+            <div class="col box d-flex flex-column align-items-center">
+              <img src="../../public/img/Palette-tabs-v2.png" alt="">
+              <div class="title">
+                Graphic Design
+              </div>    
+            </div>
           </div>
         </div>
-      </div>
-      <div class="law-example col-2-container">
-        <div class="row py-5">
-          <div class="col-5">
-            <img src="../../public/img/Gavel-Illustration-e1556884768193.png" alt="">
+        <div class="law-example col-2-container pt-4">
+          <div class="row py-5">
+            <div class="col-5">
+              <img src="../../public/img/Gavel-Illustration-e1556884768193.png" alt="">
+            </div>
+            <div class="col-7">
+              <h3>
+                Law Faculty
+              </h3>
+              <p>
+                Learning from world-leading academics and practitioners, you’ll not only receive an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions.
+              </p>
+              <button class="btn-pink text-light">
+                Read More
+              </button>
+            </div>
           </div>
-          <div class="col-7">
-            <h3>
-              Law Faculty
-            </h3>
-            <p>
-              Learning from world-leading academics and practitioners, you’ll not only receive an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions.
-            </p>
-            <button class="btn-pink text-light">
-              Read More
-            </button>
-          </div>
+          
         </div>
-        
-      </div>
       <div class="wave"></div>
     </section>
     <section class="uni-years py-5 text-center">
-        <h2 >
+      <img class="icons-img" src="../../public/img/Clock-and-Bell.png" alt="">
+        <h2>
           University Year
         </h2>
         <div class="container">
@@ -122,7 +124,7 @@
         
     </section>
     <section class="upcoming d-flex flex-column align-items-center">
-      <img class="h-25" src="../../public/img/upcoming-events-calendar-icon.png" alt="">
+      <img class="h-25 pb-3" src="../../public/img/upcoming-events-calendar-icon.png" alt="">
       <h2 class="text-center">
         Upcoming Events
       </h2>
@@ -174,18 +176,21 @@
       <h2>
         Latest Courses
       </h2>
-      <div class="courses text-center row row-cols-4 pt-5">
+      <div class="courses text-center row row-cols-4 pt-5 gx-4">
         <div class="col course-box">
           <img src="../../public/img/Decisions-icon.png" alt="">
           <h5>
             Make Better Decisions
           </h5>
           <p>
+            <font-awesome-icon icon="fa-solid fa-user" />
             Teacher: <span>James Colins</span> 
             <br>
+            <font-awesome-icon icon="fa-solid fa-money-bill" />
             Price: <span> $21.00</span>
           </p>
           <button class="btn-pink text-light">
+            <font-awesome-icon icon="fa-solid fa-eye" />
             View Course
           </button>
         </div>
@@ -194,12 +199,15 @@
           <h5>
             How to be a speaker
           </h5>
-          <p>
+         <p>
+            <font-awesome-icon icon="fa-solid fa-user" />
             Teacher: <span>James Colins</span> 
             <br>
+            <font-awesome-icon icon="fa-solid fa-money-bill" />
             Price: <span> $21.00</span>
           </p>
           <button class="btn-pink text-light">
+            <font-awesome-icon icon="fa-solid fa-eye" />
             View Course
           </button>
         </div>
@@ -209,11 +217,14 @@
             Network Introductions
           </h5>
           <p>
+            <font-awesome-icon icon="fa-solid fa-user" />
             Teacher: <span>James Colins</span> 
             <br>
+            <font-awesome-icon icon="fa-solid fa-money-bill" />
             Price: <span> $21.00</span>
           </p>
           <button class="btn-pink text-light">
+            <font-awesome-icon icon="fa-solid fa-eye" />
             View Course
           </button>
         </div>
@@ -223,11 +234,14 @@
             Brand Management
           </h5>
           <p>
+            <font-awesome-icon icon="fa-solid fa-user" />
             Teacher: <span>James Colins</span> 
             <br>
+            <font-awesome-icon icon="fa-solid fa-money-bill" />
             Price: <span> $21.00</span>
           </p>
           <button class="btn-pink text-light">
+            <font-awesome-icon icon="fa-solid fa-eye" />
             View Course
           </button>
         </div>
@@ -250,7 +264,7 @@
         </div>
       </div>
     </section>
-    <section class="fees">
+    <section class="fees py-5">
       <div class="row col-2-container">
         <div class="col-5">
           <img src="../../public/img/Girl-Illustration.png" alt="">
@@ -272,10 +286,13 @@
       <h3>
         Subscribe now to Our Newsletter !
       </h3>
-      <input type="text" placeholder="Email address...">
+      <div class="search mt-2">
+            <input type="text" placeholder="Email address...">
+             <font-awesome-icon class="paper" icon="fa-solid fa-paper-plane" />
+          </div>
     </section>
-    <section class="partners container align-items-center justify-content-center">
-      <div class="text-center pt-5">
+    <section class="partners container align-items-center justify-content-center py-5">
+      <div class="text-center pt-3">
         <h3>
         Partners
         </h3>
@@ -312,6 +329,9 @@ export default {
 <style scoped lang="scss">
 @import "~@/assets/scss/variables.scss";
 @import "~@/assets/scss/style.scss";
+.icons-img{
+  height: 50px;
+}
 .courses{
   height: 425px;
 }
@@ -397,8 +417,12 @@ export default {
 }
 .course-box{
   height: 250px;
+  border: 1px solid $border-grey-1;
+  border-radius: 1rem;
+  box-shadow: 0 2px 3px rgba(150, 148, 148, 0.1);
   &>img{
     width: 100px;
+    padding: 1rem;
   }
 }
 .subscription{
@@ -450,6 +474,7 @@ export default {
   .communication{
     background-image: url("../../public/img/partner-7.png"); 
   };
+  
   
 }
 </style>
