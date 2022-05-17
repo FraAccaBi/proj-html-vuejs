@@ -27,6 +27,7 @@ button{
     background-color: $bg-light;
     &:hover{
         background-color: $btn-yellow;
+        color: $text-light;
     }
 }
 .btn-yellow{
@@ -39,6 +40,7 @@ button{
     background-color: $bg-pink;
     &:hover{
         background-color: $btn-yellow;
+        
     }
 }
 .tx-light{

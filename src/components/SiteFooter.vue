@@ -11,7 +11,7 @@
             <font-awesome-icon class="icons" icon="fa-brands fa-facebook-f" />
             <font-awesome-icon class="icons" icon="fa-brands fa-twitter" />
             <font-awesome-icon class="icons" icon="fa-brands fa-instagram" />
-          </div>
+            </div>
         </div>
         <div class="col">
           <FooterSection />
