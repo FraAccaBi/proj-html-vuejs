@@ -282,7 +282,7 @@
         </div>
       </div>
     </section>
-    <section class="subscription d-flex align-items-center justify-content-evenly">
+    <section class="subscription d-flex align-items-center justify-content-evenly my-2">
       <h3>
         Subscribe now to Our Newsletter !
       </h3>
@@ -336,8 +336,7 @@ export default {
   height: 425px;
 }
 .faculties{
-  height: 555px;
-  margin-bottom:148px;
+  height: 750px;
   .box{
     padding-top: 10px;
     height: 130px;
@@ -365,13 +364,14 @@ export default {
     background-image: url("../../public/img/Wave-1.png"), url("../../public/svg/svg-0.svg") ;
     background-repeat: no-repeat;
     height: 130px;
-    width: 1440px;
+    width: 100vw;
     background-blend-mode: multiply;
     background-size: cover;
+    margin-top: -2.1rem;
   }
 .uni-years{
   background-color: $bg-pink;
-  height: 650px;
+  height: 700px;
   color: $text-light;
   h2{
     color: $text-light;
@@ -389,7 +389,7 @@ export default {
 }
 .upcoming{
   background-color: $bg-pink;
-  height: 350px;
+  height: 380px;
   h2{
     color: $text-light;
     
@@ -427,6 +427,7 @@ export default {
 }
 .subscription{
   background-color: $bg-pink;
+  width: 100vw;
   height: 80px;
   color: $text-light;
 }
