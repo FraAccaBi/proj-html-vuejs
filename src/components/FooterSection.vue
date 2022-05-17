@@ -1,15 +1,15 @@
 <template>
-<div>
-    <div class="get-edu">
+<div class="row text-light">
+    <div class="get-edu col">
         <h5>Get Eduprime</h5>
         <ul class="list-unstyled">
-            li
+            <li v-for="element in getEdu" :key="element.id"> {{element.text}}</li>
         </ul>
     </div>
-    <div class="networking">
+    <div class="networking col">
         <h5>Networking</h5>
         <ul class="list-unstyled">
-            li
+            <li v-for="element in networking" :key="element.id"> {{element.text}}</li>
         </ul>
     </div>
 
@@ -21,34 +21,56 @@ export default {
   name: 'FooterSection',
   data() {
    return {
-      navbar: [
+      getEdu: [
         {
-          name:'Home',
+          text:'Request a website',
           id: 1
         },
         {
-          name: 'Courses',
+          text: 'Browse Themes',
           id: 2
         },
         {
-          name:'About Us',
+          text:'Payment option',
           id: 3
         }, 
         {
-          name:'News',
+          text:'Support System',
           id: 4
         }, 
         {
-          name:'Pages',
+          text:'Checkout',
           id: 5
         }, 
         {
-          name:'Contact',
+          text:'Purchase Theme',
           id: 6
+        }
+      ],
+      networking: [
+        {
+          text:'Purchase Theme',
+          id: 1
+        },
+        {
+          text: 'Our benefit',
+          id: 2
+        },
+        {
+          text:'Our Team',
+          id: 3
         }, 
         {
-          name: 'Purchase',
-          id: 7
+          text:'Our Services',
+          id: 4
+        }, 
+        {
+          text:'Other Products',
+          id: 5
+        }, 
+        {
+          text:'My Account',
+          id: 6
         }
       ]
     }

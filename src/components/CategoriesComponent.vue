@@ -1,11 +1,9 @@
 <template>
-<div>
-    <ul class="btn-border">
-        <li>
-            
-        </li>
-    </ul>
-</div>
+      <div class="navbar d-flex ">
+        <ul class="list-unstyled d-flex flex-wrap justify-content-end">
+          <li class="border rounded-pill px-2 m-1 text-light text-uppercase" v-for="element in categories" :key="element.id"> {{element.name}}</li>
+        </ul>
+      </div>
 
   
 </template>
@@ -15,33 +13,33 @@ export default {
   name: 'CategoriesComponent',
   data() {
    return {
-      navbar: [
+      categories: [
         {
-          name:'Home',
+          name:'Economy',
           id: 1
         },
         {
-          name: 'Courses',
+          name: 'Design',
           id: 2
         },
         {
-          name:'About Us',
+          name:'Coaching',
           id: 3
         }, 
         {
-          name:'News',
+          name:'Business',
           id: 4
         }, 
         {
-          name:'Pages',
+          name:'Medicine',
           id: 5
         }, 
         {
-          name:'Contact',
+          name:'Law',
           id: 6
         }, 
         {
-          name: 'Purchase',
+          name: 'Fitness',
           id: 7
         }
       ]
@@ -54,6 +52,8 @@ export default {
 <style scoped lang="scss">
 @import "~@/assets/scss/variables.scss";
 @import "~@/assets/scss/style.scss";
-
+.border{
+    font-size: smaller;
+}
 
 </style>
