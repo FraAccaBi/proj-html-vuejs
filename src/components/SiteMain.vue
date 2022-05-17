@@ -36,7 +36,7 @@
               <div class="title">
                 Law faculty
               </div>
-
+              <font-awesome-icon class="icon-triangle" icon="fa-solid fa-caret-down" />
             </div>
             <div class="col box d-flex flex-column align-items-center ">
               <img src="../../public/img/Coins-tabs-v2.png" alt="">
@@ -349,11 +349,16 @@ export default {
   .box>img{
     width: 100px;
   }
-  .box-active:hover{
+  .box-active{
     background-color: $bg-pink-transparent;
     border:none;
     
     color: $text-light;
+    .icon-triangle{
+      color: $text-pink;
+      font-size: xx-large;
+      margin-top:-0.3rem;
+    };
     img{
       filter: brightness(3.5);
     }
