@@ -1,5 +1,6 @@
 @import "~@/assets/scss/variables.scss";
-h1,h2,h3,h4,h5, button, .box>.title { font-family: "Fredoka One", cursive; }
+h1,h2,h3,h4,h5, button, .box>.title { font-family: "Fredoka One", cursive;
+    letter-spacing: 1.5px; }
 p{
     font-family: "Source Sans Pro", sans-serif; 
     font-size: smaller;

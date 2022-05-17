@@ -13,12 +13,13 @@
             <font-awesome-icon class="icons" icon="fa-brands fa-instagram" />
           </div>
         </div>
-        <div class="col d-flex">
+        <div class="col">
           <FooterSection />
         </div>
         <div class="col">
           <div class="search">
-            
+            <input type="text" placeholder="Search...">
+             <font-awesome-icon class="lens" icon="fa-solid fa-magnifying-glass" />
           </div>
           <div class="categories d-flex flex-column align-items-right">
             <h5 class="text-light align-self-end">
@@ -54,21 +55,42 @@ export default {
 @import "~@/assets/scss/style.scss";
 .footer{
   background-color: $bg-pink;
-}
-.icons-box{
+  .icons-box{
   margin-left: -0.9rem;
+  cursor: pointer;
   .icons{
     color: $text-light;
-    height: 1.2rem;
+    height: 1rem;
     width: 1.2rem;
     margin: 1rem;
     border: 2px solid $border-yellow;
     border-radius:1.5rem;
     padding: 0.5rem;
   }
-}
-span{
+  }
+  span{
   color: $text-yellow;
+  }
+  .search{
+    position: relative;
+    padding-bottom: 1rem ;
+    input{
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 1.5rem;
+    padding: 0.8rem;
+    }
+    .lens{
+      color: $text-light;
+      background-color: $btn-yellow;
+      padding: 1.1rem;
+      border-radius: 1.5rem;
+      position: absolute;
+      right: 0;
+      top:0;
+    }
+  }
   
 }
+
 </style>

@@ -1,12 +1,12 @@
 <template>
 <div class="row text-light">
-    <div class="get-edu col">
+    <div class="get-edu col ps-4">
         <h5>Get Eduprime</h5>
         <ul class="list-unstyled">
             <li v-for="element in getEdu" :key="element.id"> {{element.text}}</li>
         </ul>
     </div>
-    <div class="networking col">
+    <div class="networking col pe-4">
         <h5>Networking</h5>
         <ul class="list-unstyled">
             <li v-for="element in networking" :key="element.id"> {{element.text}}</li>
@@ -82,6 +82,11 @@ export default {
 <style scoped lang="scss">
 @import "~@/assets/scss/variables.scss";
 @import "~@/assets/scss/style.scss";
-
+li,h5{
+  font-size: smaller;
+}
+li{
+  line-height: 2rem;
+}
 
 </style>
