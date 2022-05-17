@@ -1,7 +1,7 @@
 <template>
       <div class="navbar ">
         <ul class="list-unstyled d-flex justify-content-between align-items-center">
-          <li class="tx-light pe-3" v-for="element in navbar" :key="element.id"> {{element.name}} 
+          <li class="tx-light pe-3" :navbar="navbar" v-for="element in navbar" :key="element.id"> {{element.name}} 
             <font-awesome-icon class="icon" icon="fa-solid fa-caret-down" />
           </li>
         </ul>
@@ -16,40 +16,10 @@
 <script>
 export default {
   name: 'NavbarComponent',
-  data() {
-   return {
-      navbar: [
-        {
-          name:'Home',
-          id: 1
-        },
-        {
-          name: 'Courses',
-          id: 2
-        },
-        {
-          name:'About Us',
-          id: 3
-        }, 
-        {
-          name:'News',
-          id: 4
-        }, 
-        {
-          name:'Pages',
-          id: 5
-        }, 
-        {
-          name:'Contact',
-          id: 6
-        }, 
-        {
-          name: 'Purchase',
-          id: 7
-        }
-      ]
-    }
-  }
+  props:{
+    navbar: Array,
+  },
+  
 }
 </script>
 

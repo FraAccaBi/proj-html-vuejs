@@ -14,7 +14,10 @@
             </div>
         </div>
         <div class="col">
-          <FooterSection />
+          <FooterSection 
+          :getEdu="getEdu"
+          :networking="networking"
+          />
         </div>
         <div class="col">
           <div class="search">
@@ -25,7 +28,9 @@
             <h5 class="text-light align-self-end">
               Search categories
             </h5>
-            <CategoriesComponent />
+            <CategoriesComponent
+            :categories="categories"
+             />
             <span class="align-self-end">
               ModelTheme. All rights reserved
             </span>
@@ -45,6 +50,92 @@ export default {
   components: {
     CategoriesComponent,
     FooterSection
+  },
+  data() {
+   return {
+      categories: [
+        {
+          name:'Economy',
+          id: 1
+        },
+        {
+          name: 'Design',
+          id: 2
+        },
+        {
+          name:'Coaching',
+          id: 3
+        }, 
+        {
+          name:'Business',
+          id: 4
+        }, 
+        {
+          name:'Medicine',
+          id: 5
+        }, 
+        {
+          name:'Law',
+          id: 6
+        }, 
+        {
+          name: 'Fitness',
+          id: 7
+        }
+      ],
+      getEdu: [
+        {
+          text:'Request a website',
+          id: 1
+        },
+        {
+          text: 'Browse Themes',
+          id: 2
+        },
+        {
+          text:'Payment option',
+          id: 3
+        }, 
+        {
+          text:'Support System',
+          id: 4
+        }, 
+        {
+          text:'Checkout',
+          id: 5
+        }, 
+        {
+          text:'Purchase Theme',
+          id: 6
+        }
+      ],
+      networking: [
+        {
+          text:'Purchase Theme',
+          id: 1
+        },
+        {
+          text: 'Our benefit',
+          id: 2
+        },
+        {
+          text:'Our Team',
+          id: 3
+        }, 
+        {
+          text:'Our Services',
+          id: 4
+        }, 
+        {
+          text:'Other Products',
+          id: 5
+        }, 
+        {
+          text:'My Account',
+          id: 6
+        }
+      ]
+    }
   }
 }
 </script>

@@ -4,7 +4,9 @@
       <div class="logo ps-3">
         <img class="p-4" src="../../public/img/theme_eduprime_logo.png" alt="">
       </div>
-      <NavbarComponent  class="pe-5 me-4"/>
+      <NavbarComponent  
+      :navbar="navbar"
+      class="pe-5 me-4"/>
     </div>
     
     <div class="main d-flex flex-column align-items-center">
@@ -37,6 +39,40 @@
 import NavbarComponent from '@/components/NavbarComponent.vue'
 export default {
   name: 'SiteHeader',
+  data() {
+   return {
+      navbar: [
+        {
+          name:'Home',
+          id: 1
+        },
+        {
+          name: 'Courses',
+          id: 2
+        },
+        {
+          name:'About Us',
+          id: 3
+        }, 
+        {
+          name:'News',
+          id: 4
+        }, 
+        {
+          name:'Pages',
+          id: 5
+        }, 
+        {
+          name:'Contact',
+          id: 6
+        }, 
+        {
+          name: 'Purchase',
+          id: 7
+        }
+      ]
+    }
+  },
   components:{
     NavbarComponent
   }

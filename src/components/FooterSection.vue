@@ -3,13 +3,13 @@
     <div class="get-edu col ps-4">
         <h5>Get Eduprime</h5>
         <ul class="list-unstyled">
-            <li v-for="element in getEdu" :key="element.id"> {{element.text}}</li>
+            <li :getEdu="getEdu" v-for="element in getEdu" :key="element.id"> {{element.text}}</li>
         </ul>
     </div>
     <div class="networking col pe-4">
         <h5>Networking</h5>
         <ul class="list-unstyled">
-            <li v-for="element in networking" :key="element.id"> {{element.text}}</li>
+            <li :networking="networking" v-for="element in networking" :key="element.id"> {{element.text}}</li>
         </ul>
     </div>
 
@@ -19,61 +19,9 @@
 <script>
 export default {
   name: 'FooterSection',
-  data() {
-   return {
-      getEdu: [
-        {
-          text:'Request a website',
-          id: 1
-        },
-        {
-          text: 'Browse Themes',
-          id: 2
-        },
-        {
-          text:'Payment option',
-          id: 3
-        }, 
-        {
-          text:'Support System',
-          id: 4
-        }, 
-        {
-          text:'Checkout',
-          id: 5
-        }, 
-        {
-          text:'Purchase Theme',
-          id: 6
-        }
-      ],
-      networking: [
-        {
-          text:'Purchase Theme',
-          id: 1
-        },
-        {
-          text: 'Our benefit',
-          id: 2
-        },
-        {
-          text:'Our Team',
-          id: 3
-        }, 
-        {
-          text:'Our Services',
-          id: 4
-        }, 
-        {
-          text:'Other Products',
-          id: 5
-        }, 
-        {
-          text:'My Account',
-          id: 6
-        }
-      ]
-    }
+  props:{
+    getEdu: Array,
+    networking: Array
   }
 }
 </script>
