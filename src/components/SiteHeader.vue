@@ -27,9 +27,9 @@
     </div>
     <div class="wave"></div>
     <div class="left-box d-flex flex-column gap-3 rounded-end">
-      <font-awesome-icon icon="fa-solid fa-cart-shopping" />
-      <font-awesome-icon icon="fa-solid fa-book-open" />
-      <font-awesome-icon icon="fa-solid fa-circle-info" />
+      <font-awesome-icon class="left-icons" icon="fa-solid fa-cart-shopping" />
+      <font-awesome-icon class="left-icons" icon="fa-solid fa-book-open" />
+      <font-awesome-icon class="left-icons" icon="fa-solid fa-circle-info" />
     </div>
   </div>
   
@@ -123,6 +123,9 @@ export default {
     position: absolute;
     top: 50%;
     left:0;
+    .left-icons{
+      cursor: pointer;
+    }
   }
 }
 h1,p{

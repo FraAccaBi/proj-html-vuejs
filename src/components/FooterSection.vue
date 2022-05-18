@@ -35,6 +35,10 @@ li,h5{
 }
 li{
   line-height: 2rem;
+  cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
 }
 
 </style>

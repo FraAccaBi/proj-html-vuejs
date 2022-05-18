@@ -23,6 +23,11 @@ export default {
 @import "~@/assets/scss/style.scss";
 .border{
     font-size: smaller;
+    cursor: pointer;
+    &:hover{
+      color: $btn-yellow!important;
+      border: 1px solid $btn-yellow!important;
+    }
 }
 
 </style>

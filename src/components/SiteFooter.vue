@@ -157,6 +157,9 @@ export default {
     border: 2px solid $border-yellow;
     border-radius:1.5rem;
     padding: 0.5rem;
+    &:hover{
+      color: $border-yellow;
+    }
   }
   }
   span{

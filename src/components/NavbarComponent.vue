@@ -32,12 +32,21 @@ export default {
   ul{
     width: 75%;
     padding-top: 0.5rem; 
+    li{
+      cursor: pointer;
+      &:hover{
+        text-decoration: underline;
+        color: $btn-yellow;
+      }
+      
+    }
   };
   button{
     width: 25%;
   }
   .icon{
     font-size: small;
+    
   }
 }
 
